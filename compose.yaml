@@ -47,7 +47,7 @@ services:
         git clone https://github.com/SelMaK-fr/proaxive.git /var/www/html &&
         cd /var/www/html &&
         echo 'Copying config files...' &&
-        cp /setup/.env /var/www/html/.env &&
+        cp /setup/env /var/www/html/.env &&
         mv .htaccess.lock .htaccess &&
         cp config/parameters.exemple.json config/parameters.json &&
         echo 'Waiting for MariaDB to be ready...' &&
@@ -73,4 +73,5 @@ services:
 
 volumes:
   db_data:
+
   proaxive:
