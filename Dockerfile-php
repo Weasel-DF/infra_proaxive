@@ -1,0 +1,16 @@
+FROM php:8.4-fpm
+
+RUN apt update && apt install -y \
+        libicu-dev \
+        libxml2-dev \
+        libmagickwand-dev \
+        libonig-dev \
+        git \
+        unzip \
+        && pecl install imagick \
+        && docker-php-ext-install intl xml iconv mbstring pdo_mysql \
+        && docker-php-ext-enable imagick intl xml iconv mbstring pdo_mysql
+
+WORKDIR /var/www/html
+
+CMD ["php-fpm"]

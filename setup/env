@@ -1,0 +1,33 @@
+APP_ENV='prod'
+DOMAIN_PATH='localhost'
+APP_DOMAIN='https://localhost'
+PATH_PUBLIC=
+###> Database connect ###
+# The tables for database are migrate with Phinx.
+# DB_HOST = localhost or 127.0.0.1 (if not, enter the IP address external database server)
+DB_HOST=mariadb
+DB_NAME=proaxive
+DB_USER=proaxive
+DB_PASSWORD=S_S@dZuN8)9b
+###< Database connect ###
+###> Mailer (PHPMailer) ###
+# Data retrive to config/settings.php, please, modify only here.
+#
+# Sender Mail
+MAIL_DSN=
+MAIL_FROM='boss@mysociety.com'
+MAIL_HOST=0.0.0.0
+MAIL_USERNAME='root@root.com'
+MAIL_PASSWORD=root
+MAIL_PORT=
+# true or empty (if local)
+MAIL_SMTPAUTH=true
+# ssl or tls or empty (if local)
+MAIL_SMTPSECURE=tls
+###< Mailer (PHPMailer) ###
+
+###> Secret (Proaxive API etc.) ###
+# For application security it is better to generate a new one
+# This key is also used for the JWT token
+APP_SECRET='d8fa9d3e00bb230b38335731233f6711033b6311218bcb9b5c1ff868d995ee7c854a4fa650a2de40d4aa7c1e8e22bb5bf5abda33000ebe264fd7c3'
+###< Secret (Proaxive API etc.) ###
